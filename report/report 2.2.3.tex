@@ -1,0 +1,75 @@
+\documentclass[14pt,a4paper]{extreport}
+\usepackage[a4paper, left=2cm, right=2cm, top=1cm, bottom=2cm]{geometry}
+
+\usepackage{listings} 
+\usepackage{caption}
+\usepackage{graphicx} % Для того, чтобы вставлять картинки.
+\usepackage{wrapfig} % Картинка, обтекаемая текстом.
+\usepackage{amssymb}
+\usepackage{amsmath} % Чтобы вставлять обычный текст в формулу с помощью \text.
+
+\usepackage{multicol} % Для написания текста в несколько колонок
+
+\usepackage{float}   % Чтобы была опция таблиц H, запрещающая им бегать по документу
+\restylefloat{table}
+
+\usepackage{gensymb} % Геометрические символы. (градусы \degree)..
+
+\usepackage[warn]{mathtext} % Русские символы в формулах. Нужно писать до пакета babel. Указывает, что в формулах используются символы кириллицы, которые по умолчанию печатаются прямым шрифтом.
+
+\usepackage[T2A]{fontenc} % Установить кодировку шрифта для отображения кириллицы в формулах.
+\usepackage[utf8]{inputenc}
+
+\usepackage[russian]{babel} % Для переноса текста. Нельзя указывать одновременно russian и english, так как использует язык, который стоит правее.
+
+\usepackage{indentfirst} % Красная строка в первом абзаце.
+
+\usepackage{comment} % Для многострочный комментариев.
+\setlength{\parindent}{1.25cm} % Отступ красной строки
+
+\linespread{1.25} % Межстрочный интервал. По умолчанию 1.0
+
+\DeclareSymbolFont{T2Aletters}{T2A}{cmr}{m}{it} % Сделать так, чтобы кириллица в формулах печаталась курсивом
+
+% Объявляем новую команду для переноса строки внутри ячейки таблицы
+\newcommand{\specialcell}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\begin{document}
+	
+	\begin{center}
+		\large
+		\textsc{Лабораторная работа №2.2.3}
+		
+		\LARGE
+		\textbf{\textsc{Исследование осмотического давления}}
+		\\[5mm]
+		
+		\large
+		Маслов Артём\\
+		Брицко Владимир\\
+		Б01-104
+		\\[3mm]
+		18.05.2022
+	\end{center}
+	
+	\textbf{\large Цель работы:}
+	
+	\begin{enumerate}
+		\item Измерение осмотического давления при разной концентрации жёлтой кровяной соли;
+		\item Проверка закона Вант-Гоффа.
+	\end{enumerate}
+	
+	\textbf{\large Оборудование:}
+	
+	Осмометр; секундомер; пипетка; мерный стаканчик; химический стакан.
+	
+	\include{theory.tex}
+	
+	\include{experimental scheme.tex}
+	
+	\include{description.tex}
+	
+	\include{result.tex}
+	
+\end{document}
