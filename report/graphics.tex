@@ -1,51 +1,72 @@
+По измеренным данным построим графики зависимости $h(t)$. По углу наклона прямой определим скорость движения уровня жидкости в капилляре.
+
+% n = 0,3%
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1 \textwidth]{../plots/graph_h_t_0.png}
+	\includegraphics[width=1 \textwidth]{../plots/graph h_t n0.3 straight.png}
 \end{figure}
 
-Методом наименьших квадратов проведём наилучшую прямую $h~=~at~+~b$.
+С помощью метода наименьших квадратов проведём наилучшую прямую $h~=~vt~+~h_0$.
 
-<<<<<<< Updated upstream
-\input{../tables/h_t_fit n3.0.tex}
-=======
-\input{../tables/h_t_fit n0.3.tex}
->>>>>>> Stashed changes
+$P = 0$ дел. \\
+$v = 0,039 \pm 0,003$ $\frac{мм}{с}$. \\
+$h_0 = 101,2 \pm 0,8$ мм.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1 \textwidth]{../plots/graph_h_t_1.png}
+	\includegraphics[width=1 \textwidth]{../plots/graph h_t n0.3 reverse.png}
 \end{figure}
 
-Методом наименьших квадратов проведём наилучшую прямую $h~=~at~+~b$.
+С помощью метода наименьших квадратов проведём наилучшую прямую $h~=~vt~+~h_0$.
 
-<<<<<<< Updated upstream
-\input{../tables/h_t_fit n1.5.tex}
-=======
-\input{../tables/h_t_fit n0.15.tex}
->>>>>>> Stashed changes
+\input{../tables/h_t_fit hor rev n0.3.tex}
+
+% n = 0,15%
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1 \textwidth]{../plots/graph_h_t_2.png}
+	\includegraphics[width=1 \textwidth]{../plots/graph h_t n0.15 straight.png}
 \end{figure}
 
-Методом наименьших квадратов проведём наилучшую прямую $h~=~at~+~b$.
+С помощью метода наименьших квадратов проведём наилучшую прямую $h~=~vt~+~h_0$.
 
-<<<<<<< Updated upstream
-\input{../tables/h_t_fit n0.75.tex}
-=======
-\input{../tables/h_t_fit n0.075.tex}
->>>>>>> Stashed changes
+$P = 0$ дел. \\
+$v = 0,026 \pm 0,003$ $\frac{мм}{с}$. \\
+$h_0 = 101,9 \pm 0,8$ мм.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1 \textwidth]{../plots/graph_v_p.png}
+	\includegraphics[width=1 \textwidth]{../plots/graph h_t n0.15 reverse.png}
 \end{figure}
 
-Методом наименьших квадратов проведём наилучшую прямую $v~=~ap~+~b$.
+С помощью метода наименьших квадратов проведём наилучшую прямую $h~=~vt~+~h_0$.
 
-\input{../tables/v_p_fit.tex}
+\input{../tables/h_t_fit hor rev n0.15.tex}
+
+% n = 0,075%
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1 \textwidth]{../plots/graph h_t n0.075 reverse.png}
+\end{figure}
+
+С помощью метода наименьших квадратов проведём наилучшую прямую $h~=~vt~+~h_0$.
+
+\input{../tables/h_t_fit hor rev n0.075.tex}
+
+% v(P)
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.9 \textwidth]{../plots/graph_p_v.png}
+\end{figure}
+
+Построим график зависимости давления от скорости, а не скорости от давления, потому что погрешность определения скорости мала, а давление в системе значительно изменялось из-за наличия течи. Тогда можно применить метод наименьших квадратов для проведения прямой $P = av + P_{осм}$.
+
+\input{../tables/p_v_fit.tex}
+
+По графикам видно, что при давлении $P == 200$ делений, экспериментальные точки сильно отклоняются от прямой. Это может быть связано с тем, что при таком давлении существенно влияние течи, которое оказывает сильное воздействие на скорость движения уровня жидкости в капилляре.
 
 \begin{figure}[H]
 	\centering
